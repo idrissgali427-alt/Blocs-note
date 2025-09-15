@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galibusinesse Bloc-Note</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Galibusinesse Bloc-Note</h1>
+    </header>
+
+    <main class="app-container">
+        <aside class="sidebar">
+            <button id="newNoteBtn">Nouvelle Note</button>
+            <input type="text" id="searchInput" placeholder="Rechercher des notes...">
+            <div id="noteList" class="note-list">
+                </div>
+        </aside>
+
+        <section class="editor-area">
+            <div class="toolbar">
+                <button id="boldBtn"><b>B</b></button>
+                <button id="italicBtn"><i>I</i></button>
+                <button id="underlineBtn"><u>U</u></button>
+                <button id="readNoteBtn">Lecture</button> </div>
+            <input type="text" id="noteTitle" placeholder="Titre de la note...">
+            <div id="noteContent" contenteditable="true" class="note-content" placeholder="Écrivez votre note ici..."></div>
+            <button id="saveNoteBtn">Enregistrer la Note</button>
+            <button id="deleteNoteBtn" class="delete-button" style="display:none;">Supprimer la Note</button>
+        </section>
+
+        <section class="ai-assistant-area">
+            <h2>Assistant IA (Galibusinesse Dev)</h2>
+            <p>Décrivez votre idée ci-dessous, et l'IA vous aidera à la développer pour que vous puissiez la sauvegarder.</p>
+            <textarea id="aiInput" placeholder="Décrivez votre idée ici..."></textarea>
+            <button id="processIdeaBtn">Développer l'idée</button>
+            <div id="aiOutput" class="ai-output" contenteditable="false">
+                </div>
+            <button id="saveAiOutputBtn" style="display:none;">Sauvegarder l'output IA comme note</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
